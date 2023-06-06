@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recherche</title>
+    <link rel="stylesheet" href="./style/style-account.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Rechercher</a></li>
+            </ul>
+            <ul>
+                <li><a href="./account.html">Mon compte</a>
+                    <ul>
+                        <li><a href="./user.html">Mes informations</a></li>
+                        <li><a href="./sign_in.html">Se déconnecter</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="search-container">
+            <form method="post" action="search_user.php">
+                <div id="search-container">
+                    <select id="get_gender" name="get_gender">
+                        <option value="Homme">Homme</option>
+                        <option value="Femme">Femme</option>
+                        <option value="Autre">Autre</option>
+                    </select>
+                    <div class="input-container">
+                        <input type="text" placeholder=" " id="get_city" name="get_city" autocomplete="off">
+                        <label>Ville</label>
+                    </div>
+                    <label>Tranche d'age</label>
+                    <select id="get_age" name="get_age">
+                        <option value="18-25">18/25</option>
+                        <option value="25-35">25/35</option>
+                        <option value="35-45">35/45</option>
+                        <option value="45">45+</option>
+                    </select>
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="get_hobbies1" name="get_hobbies" value="Skateboard">
+                            <label for="get_hobbies1">Skateboard</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="get_hobbies2" name="get_hobbies" value="Danse">
+                            <label for="get_hobbies2">Danse</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="get_hobbies3" name="get_hobbies" value="Manga">
+                            <label for="get_hobbies3">Manga</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="get_hobbies4" name="get_hobbies" value="Cuisine">
+                            <label for="get_hobbies4">Cuisine</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="get_hobbies5" name="get_hobbies" value="Sport">
+                            <label for="get_hobbies5">Sport</label>
+                        </li>
+                        <li>
+                            <input type="text" placeholder=" " id="get_hobbies6" name="get_hobbies" autocomplete="off">
+                            <label for="get_hobbies6">Autre</label>
+                        </li>
+                    </ul>
+                    <input type="submit" class="submit" value="Rechercher">
+                </div>
+                <div>
+                    
+                </div>
+            </form>
+        </div>
+        
+    </main>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

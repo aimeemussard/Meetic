@@ -1,0 +1,320 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    margin-top: 0;
+    height: 7vh;
+    background-color: pink;
+}
+
+main{
+    justify-content: center;
+    display: flex;
+    height: 93vh;
+    align-items: center;
+    background-color: pink;
+}
+
+
+    /* Form */
+
+form{
+    width: 80%;
+    height: 90%;
+}
+
+.form-container{
+    width: 40%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    border-radius: 20px;
+}
+
+.form-container-login{
+    width: 40%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    border-radius: 20px;
+}
+
+.radio-container{
+    display: flex;
+    justify-content: space-evenly;
+    height: 11%;
+}
+
+.form-header{
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-header>li>a{
+    color: rgb(100, 100, 100);
+    font-size: 1.5em;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 4px;
+    text-decoration-color: pink;
+    transition: all 0.3s ease;
+}
+
+.form-header>li>.active{
+    color: rgb(100, 100, 100);
+    font-size: 1.5em;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 4px;
+    text-decoration-color: rgb(200, 50, 100);
+    transition: all 0.3s ease;
+}
+
+.form-header>li:hover{
+    font-size: 1.1em;
+}
+
+#birthdate, a{
+    font-family: 'Segoe UI', sans-serif;
+    color: rgb(100, 100, 100);
+}
+
+.input-container, .select-birthdate > option {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0.5em 0 1em 0;
+    position: relative;
+    width: 96%;
+}
+
+.input-container-login:nth-child(odd){
+    font-family: 'Segoe UI', sans-serif;
+    margin: 3em 0em 1em 0em;
+    position: relative;
+}
+
+.input-container-login:nth-child(even){
+    font-family: 'Segoe UI', sans-serif;
+    margin: 3em 0em 3em 0em;
+    position: relative;
+}
+
+.input-container input, .input-container-login input {
+    font-size: 100%;
+    padding: 0.8em 0em 0.8em 0.8em;
+    outline: none;
+    border: 2px solid rgb(200, 200, 200);
+    background-color: transparent;
+    border-radius: 20px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.input-container>input:hover, .input-container-login>input:hover, .select-birthdate:hover{
+    border-color: rgb(200, 50, 100);
+}
+
+#forgot-password-container{
+    display: flex;
+    justify-content: end;
+    margin-bottom: 1.7em;
+    font-size: 0.8em;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+}
+
+#subscribe-container{
+    font-family: 'Segoe UI', sans-serif;
+    color: rgb(100, 100, 100);
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+
+#birthdate-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.select-birthdate{
+    font-size: 100%;
+    padding: 0.8em 0.4em 0.8em 0.4em;
+    outline: none;
+    border: 2px solid rgb(200, 200, 200);
+    background-color: transparent;
+    border-radius: 20px;
+    width: 40%;
+    color: rgb(100, 100, 100);
+    transition: all 0.3s ease;
+}
+
+.select-birthdate:first-of-type{
+    width: 18%;
+    padding: 0.8em 0.4em 0.8em 0.4em;
+}
+
+.select-birthdate:last-of-type{
+    width: 35%;
+    padding: 0.8em 0.4em 0.8em 0.4em;
+}
+
+.input-container label, .input-container-login label {
+    font-size: 100%;
+    position: absolute;
+    top: 2px;
+    padding: 0.8em;
+    margin-left: 0.5em;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    color: rgb(100, 100, 100);
+}
+
+.input-container :is(input:focus, input:not(:placeholder-shown))~label, .input-container-login :is(input:focus, input:not(:placeholder-shown))~label {
+    transform: translateY(-50%) scale(.9);
+    margin: 0em;
+    margin-left: 1.3em;
+    padding: 0.4em;
+    background-color: whitesmoke;
+}
+
+.input-container :is(input:focus, input:not(:placeholder-shown)), .input-container-login :is(input:focus, input:not(:placeholder-shown)), .select-birthdate :is(select:checked) {
+    border-color: rgb(200, 50, 100);
+}
+
+.submit{
+    font-size: 1.25em;
+    color: whitesmoke;
+    padding: 0.5em;
+    outline: none;
+    border: 2px solid lightpink;
+    background-color: lightpink;
+    border-radius: 30px;
+    width: 80%;
+    height: 50px;
+    margin: 0em 0em 1em 2.4em;
+    transition: all 0.3s ease;
+}
+
+.submit:hover{
+    transform: scale(1.05);
+    border: 2px solid rgb(251, 148, 163);
+}
+
+    /* hobbies checkbox + gender radio */
+
+ul {
+    padding: 0;
+    margin: 0;
+    clear: both;
+}
+  
+li{
+    list-style-type: none;
+    list-style-position: outside;
+    padding: 10px;
+    float: left;
+}
+  
+input[type="checkbox"]:not(:checked), 
+  input[type="checkbox"]:checked, input[type="radio"]:not(:checked), 
+  input[type="radio"]:checked {
+    display: none;
+}
+  
+input[type="checkbox"] + label, input[type="radio"] + label{
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+    border: 2px solid pink;
+    border-radius: 25px;
+    color: gray;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: whitesmoke;
+    margin-bottom: 10px;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+  
+input[type="checkbox"]:checked + label, input[type="radio"]:checked + label {
+    border: 2px solid pink;
+    border-radius: 25px;
+    color: whitesmoke;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: pink;
+    transform: scale(1.15);
+}
+
+input[type="checkbox"]:hover + label, input[type="radio"]:hover + label {
+    transform: scale(1.15);
+    border: 2px solid rgb(200, 50, 100);
+}
+
+  /* navbar */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    height: 7vh;
+    padding: 0px 25px 0px 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav:hover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    height: 8vh;
+    padding: 5px 25px 0px 10px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+    /* Login button*/
+
+nav>ul{
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+}
+
+nav>ul>li{
+    display: inline-block;
+    padding: 6px 10px 6px 10px;
+    cursor: pointer;
+    border: 1px solid pink;
+    border-radius: 25px;
+    background-color: white;
+    user-select: none; 
+    transition: all 0.3s ease;
+}
+
+nav>ul>li:hover{
+    transform: scale(1.1);
+    border: 1px solid white;
+    border-radius: 25px;
+    background-color: pink;
+}
+
+nav>ul>li>a{
+    font-family: 'Segoe UI', sans-serif;
+    text-decoration: none;
+    color: gray;
+}
+
+nav>ul>li:hover>a{
+    font-family: 'Segoe UI', sans-serif;
+    text-decoration: none;
+    color: white;
+}

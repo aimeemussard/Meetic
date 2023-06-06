@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Se connecter</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./js/validate_form.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./sign_up.html">Rejoignez-nous</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="form-container-login">
+            <form action="login_test.php" method="post" onSubmit="return validateSignIn();">
+                <ul class="form-header">
+                    <li><a href="#" class="active">CONNEXION</a></li>
+                    <li><a href="./sign_up.html">INSCRIPTION</a></li>
+                </ul>
+                <div class="input-container-login">
+                    <input type="email" placeholder=" " id="email" name="get_email" autocomplete="off">
+                    <label>Adresse email</label>
+                </div>
+                <div class="input-container-login">
+                    <input type="password" placeholder=" " id="password" name="get_password" minlength="8" maxlength="30" size="30" autocomplete="off">
+                    <label>Mot de passe</label>
+                </div>
+                <div id="forgot-password-container">
+                    <a href="./sign_in.html">Mot de passe oublié ?</a>
+                </div>
+                <input type="submit" class="submit" name="login" value="Connexion">
+                <div id="subscribe-container">
+                    <p>Pas encore membre ? <a href="./sign_up.html">Inscrivez vous dès maintenant</a></p>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
